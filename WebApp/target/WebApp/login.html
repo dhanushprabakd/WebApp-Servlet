@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+  alert(selText);
+});
+</script>
+<body>
+	<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button"
+								data-toggle="dropdown">
+								Department Name <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li value = "Customer Service">Customer Service</li>
+								<li value = "Development">Development</li>
+								<li value = "Finance">Finance</li>
+								<li value = "Human Resources">Human Resources</li>
+								<li value = "Marketing">Marketing</li>
+								<li value = "Production">Production</li>
+								<li value = "Quality Management">Quality Management</li>
+								<li value = "Research">Research</li>
+								<li value = "Sales">Sales</li>
+							</ul>
+						</div>
+</body>
+</html>
